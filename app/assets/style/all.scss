@@ -1,6 +1,9 @@
 @import "../../../node_modules/bootstrap/scss/functions";
 @import "./helpers/variables";
+@import "./helpers/utilities";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
 
-@import './layout/index.scss'
+@import './layout/index.scss';
+@import 'https://fonts.google.com/specimen/Azeret+Mono';
+@import 'https://fonts.google.com/noto/specimen/Noto+Sans+TC'
