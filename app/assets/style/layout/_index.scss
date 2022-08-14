@@ -11,6 +11,10 @@
   'GRAD' 0,
   'opsz' 48
 }
+.logo{
+  width: 24px;
+  height: 24px;
+}
 .logo_link{
   @include hide-text;
   display: inline-block;
@@ -34,8 +38,6 @@
   right: 0;
   z-index: 100;
   text-align: center;
-  // padding-top: 12px;
-  // padding-bottom: 12px;
   @include desktop{
     position: relative;
     top: 0;
@@ -51,6 +53,10 @@
      padding-bottom: 0;
    }
   }
+}
+.menu-icon{
+  width: 24px;
+  height: 24px;
 }
 
 .show-menu .menu{
