@@ -14,6 +14,11 @@
 .logo{
   width: 24px;
   height: 24px;
+  // 限制高度之後，a標籤居然會跟著畫面寬度位移？
+  @include mobile{
+    width: 174px;
+    height: 42px;
+  }
 }
 .logo_link{
   @include hide-text;
@@ -23,7 +28,7 @@
   height: 24px;
   background-size: cover;
   background-position: left;
-  @include desktop {
+  @include mobile {
     height: 42px;
     width: 174px;
   }
@@ -31,24 +36,24 @@
 
 .menu{
   position: absolute;
-  top: 94px;
+  top: 74px;
   max-height: 0px;
   overflow: hidden;
   left: 0;
   right: 0;
   z-index: 100;
   text-align: center;
-  @include desktop{
+  @include mobile{
     position: relative;
     top: 0;
-    max-height: 94px;
+    max-height: 74px;
     transition: max-height 0s;
   }
   a {
    display: inline-block;
    padding-top: 12px;
    padding-bottom: 12px;
-   @include desktop{
+   @include mobile{
      padding-top: 0;
      padding-bottom: 0;
    }
