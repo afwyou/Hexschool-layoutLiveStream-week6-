@@ -3,3 +3,35 @@
   font-size: 20px;
   font-weight: 400;
 }
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+.logo_link{
+  @include hide-text;
+  display: inline-block;
+  background-image: url(../images/logo.svg);
+  @include desktop {
+    height: 42px;
+    width: 174px;
+  }
+}
+
+.menu{
+  position: absolute;
+  top: 94px;
+  max-height: 0px;
+  transition: max-height 1.3s;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  text-align: center;
+}
+
+.show-menu .menu{
+ max-height: 174px;
+}
