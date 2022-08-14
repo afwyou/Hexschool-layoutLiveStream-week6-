@@ -15,6 +15,10 @@
   @include hide-text;
   display: inline-block;
   background-image: url(../images/logo.svg);
+  width: 24px;
+  height: 24px;
+  background-size: cover;
+  background-position: left;
   @include desktop {
     height: 42px;
     width: 174px;
@@ -25,11 +29,28 @@
   position: absolute;
   top: 94px;
   max-height: 0px;
-  transition: max-height 1.3s;
+  overflow: hidden;
   left: 0;
   right: 0;
   z-index: 100;
   text-align: center;
+  // padding-top: 12px;
+  // padding-bottom: 12px;
+  @include desktop{
+    position: relative;
+    top: 0;
+    max-height: 94px;
+    transition: max-height 0s;
+  }
+  a {
+   display: inline-block;
+   padding-top: 12px;
+   padding-bottom: 12px;
+   @include desktop{
+     padding-top: 0;
+     padding-bottom: 0;
+   }
+  }
 }
 
 .show-menu .menu{
