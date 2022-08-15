@@ -71,3 +71,66 @@
 footer{
   color: #909090;
 }
+// 文字漸層色
+.gradient{
+  background: linear-gradient(to bottom, #09ACF5, #62DB54);
+  background-clip: text;
+  color: transparent;
+}
+.banner{
+  background-image: url(../images/bg_home_mobile.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  @include mobile {
+    background-image: url(../images/bg_home.jpg);
+  }
+  .mw-50{
+    margin: 0 auto;
+    @include mobile {
+
+      max-width: 650px;
+    }
+  }
+}
+.banner h2 {
+  font-size: 24px;
+  @include mobile {
+    font-size: 48px;
+  }
+}
+.banner small{
+  @include mobile {
+    font-size: 18px;
+  }
+}
+.banner_title{
+  position: relative;
+}
+
+.deco-square{
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  background: white;
+}
+.deco-square-1{
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+.deco-square-2{
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+}
+.deco-square-3{
+  bottom: 0;
+  left: 0;
+  transform: translate(-50%, 50%);
+}
+.deco-square-4{
+  bottom: 0;
+  right: 0;
+  transform: translate(50%, 50%);
+}
