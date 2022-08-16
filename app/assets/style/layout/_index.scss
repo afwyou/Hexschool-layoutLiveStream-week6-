@@ -181,3 +181,24 @@ footer{
     color: grey;
   }
 }
+
+.class-process{
+
+   .classStep{
+     max-width: 336px;
+     margin: 0 auto;
+     @include mobile {
+       max-width: 306px;
+     }
+   }
+  .classStep span {
+    position: absolute;
+    top: 0;
+    transform: translate(0,-50%);
+    display: inline-block;
+    width: 62px;
+    height: 56px;
+    z-index: 99;
+    background: $secondary;
+  }
+}
