@@ -134,3 +134,50 @@ footer{
   right: 0;
   transform: translate(50%, 50%);
 }
+
+.handbyhand .material-symbols-outlined{
+  background: linear-gradient(to bottom, #09ACF5, #62DB54);
+  @include desktop{
+    // 響應事後藥整段重寫，不然會被覆蓋clip的部分
+    background: grey;
+    background-clip: text;
+    color: transparent;
+  }
+  background-clip: text;
+  color: transparent;
+  font-size: 40px;
+  font-weight: bold;
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 900,
+  'GRAD' 0,
+  'opsz' 48
+}
+.handbyhand .location {
+  background: linear-gradient(to bottom, #09ACF5, #62DB54);
+  background-clip: text;
+  color: transparent;
+}
+.handbyhand .personal-location{
+  border:1px solid $success;
+  border-radius: 12px;
+}
+
+.handbyhand h2 .material-symbols-outlined{
+  font-size: 100px;
+  line-height: 10px;
+}
+
+.deco-line{
+  width: 50px;
+  display: inline-block;
+}
+
+.handbyhand .over-100, .handbyhand .high-efficient{
+  background: $tertiary;
+  color: white;
+  @include desktop{
+    background:$primary;
+    color: grey;
+  }
+}
