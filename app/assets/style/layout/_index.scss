@@ -202,3 +202,20 @@ footer{
     background: $secondary;
   }
 }
+
+.recommend {
+   .teacher{
+     max-width: 336px;
+     margin-right: auto;
+     margin-left: auto;
+   }
+  .btn{
+    background: linear-gradient(to right, #09ACF5, #62DB54);
+    border-radius: 12px;
+    width: 172px;
+    display: block;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+}
