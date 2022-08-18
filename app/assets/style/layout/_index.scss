@@ -222,3 +222,57 @@ footer{
     }
   }
 }
+
+.effects{
+  .effect{
+    background-color: rgba(28, 28, 28, .9);
+    background-blend-mode: multiply;  
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    .deco-line{
+      @include desktop{
+        border-color: white !important;
+      }
+    }
+    span{
+      @include desktop{
+        color: $gray-500 !important;
+      }
+    }
+     p{
+       @include desktop{
+        color: $gray-600 !important;
+      }
+     }
+    @include desktop{
+      padding-top: 216px !important;
+      padding-bottom: 216px !important;
+      &:hover{
+        cursor: pointer;
+        background-color: rgba(28, 28, 28, 0);
+        span {
+         color: $success !important;
+        }
+        p{
+          color: white !important;
+        }
+        .deco-line{
+          border-color: $success !important;
+        }
+      }
+    }
+  }
+  .effect-1{
+    background-image: url(../images/info01.jpg);
+  }
+  .effect-2{
+    background-image: url(../images/info02.jpg);
+  }
+  .effect-3{
+    background-image: url(../images/info03.jpg);
+  }
+  .effect-4{
+    background-image: url(../images/info04.jpg);
+  }
+}
