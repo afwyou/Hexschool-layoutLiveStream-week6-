@@ -329,7 +329,9 @@ footer{
         width: 47%;
         bottom: 0;
         right: 0;
-
+      }
+      @include l-desktop{
+        bottom: 32px;
       }
       img{
         width: 80px;

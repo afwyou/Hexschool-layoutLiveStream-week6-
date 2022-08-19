@@ -3,6 +3,11 @@
     @content
   }
 };
+@mixin l-desktop {
+  @media (min-width:1400px) {
+    @content
+  }
+};
 @mixin mobile {
   @media (min-width:767px) {
     @content
