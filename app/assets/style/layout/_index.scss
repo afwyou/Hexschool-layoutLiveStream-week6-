@@ -282,6 +282,45 @@ footer{
   .btn{
     width: 47px;
   }
+  .squareRounded {
+  display: none;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  &-topLeft {
+    border-top: 2px solid #62DB54;
+    border-left: 2px solid #62DB54;
+    border-top-left-radius: 10px;
+    top: 0;
+    left: 0;
+  }
+  &-topRight {
+    border-top: 2px solid #62DB54;
+    border-right: 2px solid #62DB54;
+    border-top-right-radius: 10px;
+    top: 0;
+    right: 0;
+  }
+  &-bottomLeft {
+    border-bottom: 2px solid #62DB54;
+    border-left: 2px solid #62DB54;
+    border-bottom-left-radius: 10px;
+    bottom: 0;
+    left: 0;
+  }
+  &-bottomRight {
+    border-bottom: 2px solid #62DB54;
+    border-right: 2px solid #62DB54;
+    border-bottom-right-radius: 10px;
+    bottom: 0;
+    right: 0;
+  }
+}
+.card:hover {
+  .squareRounded {
+    display: block;
+  }
+}
 }
 
 .superPower{
