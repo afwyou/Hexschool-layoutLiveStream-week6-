@@ -292,8 +292,11 @@ footer{
 
   .swiper {
     width: 100%;
-    max-height: 429px;
+    height: auto;
     position: relative;
+    @include desktop{
+      height: 429px;
+    }
     .swiper-card{
 
       &-img{
@@ -350,3 +353,46 @@ footer{
    }
   }
 }
+
+
+.swiper-buttons {
+  position: initial;
+  transform: none;
+  @include desktop {
+      bottom: 0;
+      left: 30%;
+      transform: translateX(-50%);
+      z-index: 10;
+      position: absolute;
+
+    }
+
+  }
+
+.swiper-pagination {
+    position: unset;
+    width: auto;
+    .swiper-pagination-bullet {
+      background-color: #62DB54;
+      // 才會有bullet色彩
+      opacity: initial;
+      &-active {
+        // active的樣式，才會有拉長的效果
+        width: 16px;
+        border-radius: 100px;//不知道這裡要幹嘛
+      }
+    }
+  }
+
+  .swiper-button-next:after, .swiper-button-prev:after {
+    content: '';
+  }
+
+  .swiper-button-next, .swiper-button-prev {
+    position: unset;
+    width: 24px;
+    height: 24px;
+    margin-top: 0;
+    color: #62DB54;
+  }
+
