@@ -311,7 +311,7 @@ footer{
           width: 60%;
           height: 90%;
           border-radius: 24px;
-          position: absolute;
+          position: absolute;//桌面版改成絕對定位，為何不影響偽元素的絕對定位？這裡如果依然是相對定位，對排版也並沒有產生變化
         }
         &::after {
           content: '';
@@ -341,7 +341,7 @@ footer{
       position: relative;
       border-bottom-left-radius: 0% !important;
       @include desktop {
-        position: absolute;
+        position: absolute;//桌面版改成絕對定位，為何不影響大頭照的絕對定位？relative可以同時存在？
         width: 47%;
         bottom: 0;
         right: 0;
@@ -399,7 +399,7 @@ footer{
   }
 
   .swiper-button-next:after, .swiper-button-prev:after {
-    content: '';
+    content: '';//為了將預設的icon給去除
   }
 
   .swiper-button-next, .swiper-button-prev {
