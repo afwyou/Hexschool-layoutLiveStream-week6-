@@ -461,3 +461,11 @@ footer{
     color: #62DB54;
   }
 
+
+  .join-us-container{
+    width: 100%;
+    margin: 0 auto;
+    @include mobile {
+      max-width: 966px;
+    }
+  }
