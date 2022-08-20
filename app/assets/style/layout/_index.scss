@@ -371,7 +371,7 @@ footer{
 
 .swiper-pagination {
     position: unset;
-    width: auto;
+    width: auto !important;
     .swiper-pagination-bullet {
       background-color: #62DB54;
       // 才會有bullet色彩
