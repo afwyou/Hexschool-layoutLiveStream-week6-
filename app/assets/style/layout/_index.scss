@@ -224,6 +224,10 @@ footer{
 }
 
 .effects{
+  @include mobile {
+   flex-wrap: wrap;
+
+  }
   .effect{
     background-color: rgba(28, 28, 28, .9);
     background-blend-mode: multiply;  
@@ -245,9 +249,13 @@ footer{
         color: $gray-600 !important;
       }
      }
+     @include mobile{
+       width: 50%;
+     }
     @include desktop{
       padding-top: 216px !important;
       padding-bottom: 216px !important;
+      width: 25% !important;
       &:hover{
         cursor: pointer;
         background-color: rgba(28, 28, 28, 0);
