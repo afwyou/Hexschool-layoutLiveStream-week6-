@@ -155,10 +155,13 @@ footer{
   'GRAD' 0,
   'opsz' 48
 }
-.handbyhand-item :hover{
-  background: linear-gradient(to bottom, #09ACF5, #62DB54);
-  background-clip: text;
-  color: transparent;
+.handbyhand-item:hover{
+  .material-symbols-outlined{
+    background: linear-gradient(to bottom, #09ACF5, #62DB54);
+    background-clip: text;
+    color: transparent;
+  }
+
   border:1px solid $success;
   border-radius: 12px;
 }
