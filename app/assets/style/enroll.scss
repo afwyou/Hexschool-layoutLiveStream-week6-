@@ -13,7 +13,7 @@
     left: 0;  
     right: 0;
     height: 2px;
-    background-color: #C1C1C1;
+    background-color: $success;
   }
   &-pointer {
     //讓偽元素可以定位
@@ -64,6 +64,9 @@
     }
   }
 }
+
+
+
 .class-content{
   @include desktop{
     position: absolute;
