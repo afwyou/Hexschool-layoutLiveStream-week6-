@@ -64,7 +64,15 @@
     }
   }
 }
-
+.class-content{
+  @include desktop{
+    position: absolute;
+    top: 50%;
+    width: 33.333%;
+    left: 72px;
+    transform: translate(0, -50%);
+  }
+}
 .enrollment {
   .enrollments{
     @include desktop{
