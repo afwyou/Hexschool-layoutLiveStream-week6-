@@ -64,3 +64,54 @@
     }
   }
 }
+
+.enrollment {
+  .enrollments{
+    @include desktop{
+      padding-left: 114px !important;
+    }
+  }
+  .pay-ways{
+    gap: 8px;
+  }
+  .pay-way{
+    width: 140px;
+    &:hover {
+      color: $success ;
+      border-color: $success !important;
+      cursor: pointer;
+    }
+  }
+  form {
+    label{
+      width: fit-content;
+      display: block;
+      margin-right: auto;
+      color: #C1C1C1;
+      margin-bottom: 8px;
+      @include desktop{
+        margin-bottom: 6px;
+      }
+    }
+    input{
+      border:1px solid white !important;
+      background-color: $secondary;
+    }
+    select{
+      background-color: $secondary;
+      color: white;
+      border:1px solid white !important;
+    }
+    .datepicker-header, .datepicker-main{
+      color:black !important;
+    }
+
+    .pay-button{
+      width: 100%;
+      background:linear-gradient(to right, #09ACF5, #62DB54) ;
+      @include desktop{
+        width: fit-content;
+      }
+    }
+  }
+}
