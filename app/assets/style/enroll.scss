@@ -15,21 +15,6 @@
     height: 2px;
     background-color: #C1C1C1;
   }
-  &::before {
-    //偽元素定位
-    position: absolute;
-    //偽元素基本設定
-    content: '';
-    //進度條位置及色彩
-    top: 9px;
-    left: 0;  
-    right: 50%;
-    height: 2px;
-    z-index: 2;
-    background-color:$success;
-  }
-
-
   &-pointer {
     //讓偽元素可以定位
     position: relative;
@@ -79,7 +64,36 @@
     }
   }
 }
-
+.step2{
+  .timeline::before{
+    //偽元素定位
+    position: absolute;
+    //偽元素基本設定
+    content: '';
+    //進度條位置及色彩
+    top: 9px;
+    left: 0;  
+    right: 50%;
+    height: 2px;
+    z-index: 2;
+    background-color:$success;
+  }
+}
+.step3{
+  .timeline::before{
+    //偽元素定位
+    position: absolute;
+    //偽元素基本設定
+    content: '';
+    //進度條位置及色彩
+    top: 9px;
+    left: 0;  
+    right: 0;
+    height: 2px;
+    z-index: 2;
+    background-color:$success;
+  }
+}
 
 
 .class-content{
