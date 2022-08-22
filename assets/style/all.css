@@ -18984,17 +18984,6 @@ footer {
   background-color: #C1C1C1;
 }
 
-.timeline::before {
-  position: absolute;
-  content: '';
-  top: 9px;
-  left: 0;
-  right: 50%;
-  height: 2px;
-  z-index: 2;
-  background-color: #62DB54;
-}
-
 .timeline-pointer {
   position: relative;
   color: #C1C1C1;
@@ -19051,6 +19040,28 @@ footer {
   color: #FFFFFF;
   background-color: #62DB54;
   border-color: #62DB54;
+}
+
+.step2 .timeline::before {
+  position: absolute;
+  content: '';
+  top: 9px;
+  left: 0;
+  right: 50%;
+  height: 2px;
+  z-index: 2;
+  background-color: #62DB54;
+}
+
+.step3 .timeline::before {
+  position: absolute;
+  content: '';
+  top: 9px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  z-index: 2;
+  background-color: #62DB54;
 }
 
 @media (min-width: 992px) {
