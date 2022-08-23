@@ -1,0 +1,20 @@
+.classDetail{
+  ul{
+    list-style: square;
+    li::marker{
+      color: $success;
+      font-size: 18px;
+    }
+  }
+
+  .material-symbols-outlined{
+    // display: block;
+    // 設置寬度會讓背景與圖示位置偏離中心
+    // width: 32px;
+    // height: 32px;
+    // 直接設置fz就可以了
+    font-size: 32px;
+    background: linear-gradient(to bottom,$info,$success);
+    border-radius: 50%;
+  }
+}
