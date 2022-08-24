@@ -7,7 +7,7 @@
     }
   }
 
-  .material-symbols-outlined{
+  .class-price .material-symbols-outlined{
     // display: block;
     // 設置寬度會讓背景與圖示位置偏離中心
     // width: 32px;
@@ -16,5 +16,24 @@
     font-size: 32px;
     background: linear-gradient(to bottom,$info,$success);
     border-radius: 50%;
+  }
+}
+
+.divider{
+  margin-left: -32px;
+  margin-right: -32px;
+  /* Set the hr color */
+  // color: #ffff; /* old IE */
+  // background-color: #fff; /* Modern Browsers */
+  @include mobile {
+    // border-top: 5px !important;
+    // border: none;
+    // height: 5px;
+    margin-right: -24px;
+    margin-left: -24px;
+  }
+  &:not([size]){
+    height: 2px;
+    background-color: #fff; 
   }
 }
