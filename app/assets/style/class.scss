@@ -22,18 +22,12 @@
 .divider{
   margin-left: -32px;
   margin-right: -32px;
-  /* Set the hr color */
-  // color: #ffff; /* old IE */
-  // background-color: #fff; /* Modern Browsers */
-  @include mobile {
-    // border-top: 5px !important;
-    // border: none;
-    // height: 5px;
-    margin-right: -24px;
-    margin-left: -24px;
-  }
   &:not([size]){
     height: 2px;
     background-color: #fff; 
   }
+  @include mobile {
+    margin-right: -24px;
+    margin-left: -24px;
+   }
 }
