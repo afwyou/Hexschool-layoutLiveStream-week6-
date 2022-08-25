@@ -32,7 +32,7 @@
   --bs-icon: #adb5bd;
   --bs-black: #000;
   --bs-grayLight: #C1C1C1;
-  --bs-font-sans-serif: "Azeret Mono", "Noto Sans Traditional Chinese", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-sans-serif: "Azeret Mono", "Noto Sans TC", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
 }
@@ -7540,7 +7540,7 @@ fieldset:disabled .btn {
 
 @media (min-width: 576px) {
   .modal-dialog {
-    max-width: 500px;
+    max-width: 636px;
     margin: 1.75rem auto;
   }
   .modal-dialog-scrollable {
@@ -7550,7 +7550,7 @@ fieldset:disabled .btn {
     min-height: calc(100% - 3.5rem);
   }
   .modal-sm {
-    max-width: 300px;
+    max-width: 336px;
   }
 }
 
@@ -19092,182 +19092,32 @@ footer {
   }
 }
 
-.timeline {
-  position: relative;
-}
-
-.timeline::after {
-  position: absolute;
-  content: '';
-  top: 9px;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background-color: #C1C1C1;
-}
-
-.timeline-pointer {
-  position: relative;
-  color: #C1C1C1;
-}
-
-.timeline-pointer p {
-  padding-top: 24px;
-  margin-bottom: 0;
-  line-height: 1.5;
-}
-
-.timeline-pointer::before {
-  position: absolute;
-  content: '';
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-  width: 20px;
-  height: 20px;
-  border: 1px solid #C1C1C1;
-  border-radius: 50%;
-  background-color: #2D2D2D;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-size: 12px;
-  z-index: 1;
-}
-
-.timeline-pointer.step-1::before {
-  content: '1';
-}
-
-.timeline-pointer.step-2::before {
-  content: '2';
-}
-
-.timeline-pointer.step-3::before {
-  content: '3';
-}
-
-.timeline-pointer.active {
-  color: #62DB54;
-}
-
-.timeline-pointer.active::before {
-  color: #FFFFFF;
-  background-color: #62DB54;
-  border-color: #62DB54;
-}
-
-.step2 .timeline::before {
-  position: absolute;
-  content: '';
-  top: 9px;
-  left: 0;
-  right: 50%;
-  height: 2px;
-  z-index: 2;
-  background-color: #62DB54;
-}
-
-.step3 .timeline::before {
-  position: absolute;
-  content: '';
-  top: 9px;
-  left: 0;
-  right: 0;
-  height: 2px;
-  z-index: 2;
-  background-color: #62DB54;
-}
-
-@media (min-width: 992px) {
-  .class-content {
-    position: absolute;
-    top: 50%;
-    width: 33.333%;
-    left: 72px;
-    -webkit-transform: translate(0, -50%);
-        -ms-transform: translate(0, -50%);
-            transform: translate(0, -50%);
-  }
-}
-
-@media (min-width: 992px) {
-  .enrollment .enrollments {
-    padding-left: 114px !important;
-  }
-}
-
-.enrollment .pay-ways {
-  gap: 8px;
-}
-
-.enrollment .pay-way {
-  width: 140px;
-}
-
-.enrollment .pay-way:hover {
-  color: #62DB54;
-  border-color: #62DB54 !important;
-  cursor: pointer;
-}
-
-.enrollment form label {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  display: block;
-  margin-right: auto;
-  color: #C1C1C1;
-  margin-bottom: 8px;
-}
-
-@media (min-width: 992px) {
-  .enrollment form label {
-    margin-bottom: 6px;
-  }
-}
-
-.enrollment form input {
-  border: 1px solid white !important;
-  background-color: #1C1C1C;
-}
-
-.enrollment form select {
-  background-color: #1C1C1C;
-  color: white;
-  border: 1px solid white !important;
-}
-
-.enrollment form .datepicker-header, .enrollment form .datepicker-main {
-  color: black !important;
-}
-
-.enrollment .material-symbols-outlined {
-  font-size: 42px;
-  vertical-align: middle;
-  color: #62DB54;
-  font-variation-settings: 'FILL' 0, 'wght' 700, 'GRAD' 0, 'opsz' 48;
-}
-
-.pay-button {
-  width: 100%;
+.btn-login {
   background: -webkit-gradient(linear, left top, right top, from(#09ACF5), to(#62DB54));
   background: -o-linear-gradient(left, #09ACF5, #62DB54);
   background: linear-gradient(to right, #09ACF5, #62DB54);
+  border-radius: 8px;
+  color: white !important;
 }
 
-@media (min-width: 992px) {
-  .pay-button {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
+.divider-login {
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  z-index: 2;
+  width: 156px;
+  background: #2D2D2D;
+  opacity: 1;
+  margin: 0 auto;
+}
+
+.modal-dialog {
+  max-width: 336px;
+}
+
+@media (min-width: 767px) {
+  .modal-dialog {
+    max-width: 636px;
   }
 }
 

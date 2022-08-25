@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
       rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link
@@ -24,12 +26,12 @@
   <body>
    <header class="d-flex justify-content-between align-items-center bg-primary py-6 px-md-18 px-3">
      <h1 class="logo m-0">
-      <a href="https://afwyou.github.io/Hexschool-layoutLiveStream-week6-/" class="logo_link">程式家教</a>
+      <a href="./index.html" class="logo_link">程式家教</a>
      </h1>
      <ul class="menu list-unstyled d-md-flex m-0 fs-nav flex-wrap flex-md-nowrap bg-primary">
-       <li class="me-md-12"><a href="https://afwyou.github.io/Hexschool-layoutLiveStream-week6-/">首頁</a></li>
-       <li class="me-md-12"><a href="https://afwyou.github.io/Hexschool-layoutLiveStream-week6-/classes.html">課程介紹</a></li>
-       <li class=""><a href="#"><span class="material-symbols-outlined align-middle me-2">
+       <li class="me-md-12"><a href="./index.html">首頁</a></li>
+       <li class="me-md-12"><a href="./classes.html">課程介紹</a></li>
+       <li class=""><a href="#" data-bs-toggle="modal" data-bs-target="#login"><span class="material-symbols-outlined align-middle me-2">
         account_circle
         </span>登入</a></li>
      </ul>
@@ -209,13 +211,13 @@
 <!-- 下半部 其他人也看這些課程 -->
 <div class="bg-black">
   <div class="container">
-    <div class="row g-6 py-10 pb-md-20 bg-black">
+    <ul class="row g-6 py-10 pb-md-20 bg-black list-unstyled">
       <div class="text-center text-white mb-md-6">
         <h3>其他人也看了這些課程</h3>
         <div class="deco-line border border-success border-2 mt-4"></div>
       </div>
 
-      <div class=" col-lg-3 col-md-6">
+      <li class=" col-lg-3 col-md-6">
         <div class="teacher h-100 bg-primary rounded-5 text-white px-8 px-md-6 pt-6 pb-4">
           <div class="text-center mb-6">
             <img src="./assets/images/teacher01.jpg" alt="" class="rounded-circle mb-2" width="100px">
@@ -234,9 +236,9 @@
           </div>
 
         </div>
-      </div>
+      </li>
 
-      <div class=" col-lg-3 col-md-6">
+      <li class=" col-lg-3 col-md-6">
         <div class="teacher h-100 bg-primary rounded-5 text-white px-8 px-md-6 pt-6 pb-4">
           <div class="text-center mb-6">
             <img src="./assets/images/teacher02.jpg" alt="" class="rounded-circle mb-2" width="100px">
@@ -254,8 +256,8 @@
           </div>
 
         </div>
-      </div>
-      <div class=" col-lg-3 col-md-6">
+      </li>
+      <li class=" col-lg-3 col-md-6">
         <div class="teacher h-100 bg-primary rounded-5 text-white px-8 px-md-6 pt-6 pb-4">
           <div class="text-center mb-6">
             <img src="./assets/images/teacher03.jpg" alt="" class="rounded-circle mb-2" width="100px">
@@ -273,8 +275,8 @@
           </div>
 
         </div>
-      </div>
-      <div class=" col-lg-3 col-md-6">
+      </li>
+      <li class=" col-lg-3 col-md-6">
         <div class="teacher h-100 bg-primary rounded-5 text-white px-8 px-md-6 pt-6 pb-4">
           <div class="text-center mb-6">
             <img src="./assets/images/teacher04.jpg" alt="" class="rounded-circle mb-2" width="100px">
@@ -292,8 +294,8 @@
           </div>
 
         </div>
-      </div>
-    </div>
+      </li>
+    </ul>
   </div>
 </div>
 
