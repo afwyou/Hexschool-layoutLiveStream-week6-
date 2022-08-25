@@ -483,3 +483,10 @@ footer{
    opacity: 1;
    margin: 0 auto;
  }
+ .modal-dialog{
+   max-width: 336px;
+   //不知道為什麼響應式不會執行，只好自己再寫
+   @include mobile {
+     max-width: 636px;
+   }
+ }
