@@ -469,3 +469,17 @@ footer{
       max-width: 966px;
     }
   }
+
+ .btn-login{
+   background: linear-gradient(to right,$info, $success);
+   border-radius: 8px;
+   color: white !important;
+ }
+ .divider-login{
+   transform: translate(0,-50%);
+   z-index: 2;
+   width: 156px; 
+   background: $primary;
+   opacity: 1;
+   margin: 0 auto;
+ }

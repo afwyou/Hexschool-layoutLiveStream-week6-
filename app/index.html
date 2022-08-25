@@ -484,3 +484,47 @@ current: index
   </div>
 
 </div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="container">
+    <div class="modal-dialog">
+      <div class="modal-content bg-primary p-6 pb-10 border border-white mx-3">
+        <span class="material-symbols-outlined text-white fw-bold fs-2 text-end" data-bs-dismiss="modal"
+          aria-label="Close">
+          close
+        </span>
+        <div class="modal-header text-white justify-content-center border-0">
+          <h5 class="modal-title " id="exampleModalLabel">登入</h5>
+        </div>
+
+        <form>
+          <div class="mb-4 ">
+            <label for="exampleInputEmail1" class="form-label text-grayLight mb-2">信箱</label>
+            <input type="email" class="form-control text-grayLight bg-black " id="exampleInputEmail1"
+              aria-describedby="emailHelp" placeholder="請輸入信箱">
+          </div>
+          <div class="mb-4">
+            <label for="password" class="form-label text-grayLight">密碼</label>
+            <input type="password" class="form-control text-grayLight bg-black" id="password" placeholder="請輸入密碼">
+          </div>
+          <button type="submit" class="btn btn-login w-100">登入</button>
+        </form>
+        <div class="border-top border-white mt-8 mb-4">
+          <p class="position-relative divider-login text-grayLight mb-0 text-center">其他登入方式</p>
+
+        </div>
+        <button type="submit" class="btn btn-primary w-100 border border-white mb-4">
+          <img src="./assets/images/icon_fb.svg" width="24px" class="me-8" alt="">Facebook 登入</button>
+        <button type="submit" class="btn btn-primary w-100 border border-white ">
+          <img src="./assets/images/icon_google.svg" width="24px" class="me-8" alt="">Google 登入</button>
+
+
+
+
+      </div>
+    </div>
+
+  </div>
+</div>
