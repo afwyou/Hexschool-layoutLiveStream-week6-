@@ -1,3 +1,7 @@
+body{
+  min-height: calc(100vh - 72px - 52px);
+}
+
 .index__h1 {
   color:#00cc99;
   font-size: 20px;
@@ -22,7 +26,9 @@
 }
 .logo_link{
   @include hide-text;
-  display: inline-block;
+  // display: inline-block;
+  // 為何在這裡使用db就不會有元素跟著畫面寬度位移的狀況？
+  display: block;
   background-image: url(../images/logo.svg);
   width: 24px;
   height: 24px;
@@ -77,13 +83,17 @@ footer{
   background-clip: text;
   color: transparent;
 }
-.banner{
-  background-image: url(../images/bg_home_mobile.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  @include mobile {
-    background-image: url(../images/bg_home.jpg);
+.banner {
+  & .container{
+    background-image: url(../images/bg_home_mobile.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 336px;
+    @include mobile {
+      background-image: url(../images/bg_home.jpg);
+      height: 534px;
+    }
   }
   .mw-50{
     margin: 0 auto;
@@ -212,6 +222,7 @@ footer{
      max-width: 336px;
      margin-right: auto;
      margin-left: auto;
+     border: 1px solid;
      &:hover{
        border: 1px solid  #62DB54;
      }

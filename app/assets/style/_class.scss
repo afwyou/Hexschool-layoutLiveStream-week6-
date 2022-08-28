@@ -1,4 +1,8 @@
 .classDetail{
+  .hover-style:hover{
+    color: $success !important;
+    cursor: pointer;
+  }
   ul{
     list-style: square;
     li::marker{

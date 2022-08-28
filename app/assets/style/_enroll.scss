@@ -48,6 +48,13 @@
     &.step-1::before {
       content: '1';
     }
+      // 相同元素可以使用不同class名稱串接形成更高的權重，中間不能有空白
+      // google icon 的使用方式
+    &.step-1.active::before {
+      content: 'check';
+      font-family: 'Material Icons';
+      z-index: 99;
+    }
     &.step-2::before {
       content: '2';
     }
