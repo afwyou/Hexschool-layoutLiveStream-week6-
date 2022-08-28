@@ -19,6 +19,8 @@
     href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/css/datepicker-bs5.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 
     <link rel="stylesheet" href="./assets/style/all.css">
   </head>
@@ -29,9 +31,9 @@
       <a href="./index.html" class="logo_link">程式家教</a>
      </h1>
      <ul class="menu list-unstyled d-md-flex m-0 fs-nav flex-wrap flex-md-nowrap bg-primary">
-       <li class="me-md-12"><a href="./index.html">首頁</a></li>
-       <li class="me-md-12"><a href="./classes.html">課程介紹</a></li>
-       <li class=""><a href="#" data-bs-toggle="modal" data-bs-target="#login"><span class="material-symbols-outlined align-middle me-2">
+       <li class="me-md-12"><a href="./index.html" class="d-block">首頁</a></li>
+       <li class="me-md-12"><a href="./classes.html" class="d-block">課程介紹</a></li>
+       <li class=""><a href="#" data-bs-toggle="modal" data-bs-target="#login" class="d-block"><span class="material-symbols-outlined align-middle me-2">
         account_circle
         </span>登入</a></li>
      </ul>
@@ -47,9 +49,10 @@
    </div>
 
     
-<div class="banner">
-  <div class="container py-21 ">
-    <div class="banner_title bg-tertiary px-7 py-8 py-md-12 px-md-21 text-center border border-white mw-50">
+<div class="banner bg-secondary p-lg-18">
+  <div class="container d-flex align-items-center">
+    <div data-aos="fade-in"
+      class="banner_title bg-tertiary px-7 py-8 py-md-12 px-md-21 text-center border border-white mw-50">
       <h2 class="text-white fw-bold mb-6">
         <span class="gradient">全台最豐富的程式家教</span>
         <br>
@@ -68,7 +71,7 @@
 <!-- 手把手 -->
 <div class="bg-primary handbyhand">
   <div class="container py-10 py-md-20">
-    <ul class="row list-unstyled">
+    <ul data-aos="fade-in" class="row list-unstyled">
       <li class="col-md-12 col-xxl-3 text-white d-flex flex-column justify-content-center ">
         <h2 class="text-center text-xxl-start d-inline-block ">手把手帶你<br>親自到家教到會<br>
           <!-- <span class="material-symbols-outlined">
@@ -124,7 +127,7 @@
       <div class="deco-line border border-success border-2 mt-4"></div>
     </div>
 
-    <ul class="row gy-12 list-unstyled">
+    <ul data-aos="fade-right" class="row gy-12 list-unstyled">
       <li class="col-sm-6 col-xl-3">
         <div class="classStep h-100 text-white p-12 border border-white rounded-4" style="position: relative;">
           <span class="display-5 text-success text-center fw-bold">01</span>
@@ -213,7 +216,7 @@
       <div class="deco-line border border-success border-2 mt-4"></div>
     </div>
 
-    <ul class="row gy-4 mb-6 mb-md-16 justify-content-center">
+    <ul data-aos="fade-down" class="row gy-4 mb-6 mb-md-16 justify-content-center">
       <li class=" col-xxl-3 col-md-6">
         <div class="teacher h-100 bg-primary rounded-5 text-white px-8 px-md-4 pt-6 pb-4">
           <div class="text-center mb-6">
@@ -228,7 +231,7 @@
           <hr>
           <div class="d-flex align-items-center justify-content-center">
             <span class="fs-6 me-2 fw-light">50分鐘</span>
-            <p class="fs-2 mt-4 text-center "> NT$1600</p>
+            <p class="my-0 fs-2 text-center "> NT$1600</p>
 
           </div>
 
@@ -247,7 +250,7 @@
           <hr>
           <div class="d-flex align-items-center justify-content-center">
             <span class="fs-6 me-2 fw-light">50分鐘</span>
-            <p class="fs-2 mt-4 text-center "> NT$2200</p>
+            <p class="fs-2 my-0 text-center "> NT$2200</p>
 
           </div>
 
@@ -267,7 +270,7 @@
           <hr>
           <div class="d-flex align-items-center justify-content-center">
             <span class="fs-6 me-2 fw-light">50分鐘</span>
-            <p class="fs-2 mt-4 text-center "> NT$1800</p>
+            <p class="fs-2 my-0 text-center "> NT$1800</p>
 
           </div>
 
@@ -287,7 +290,7 @@
           <hr>
           <div class="d-flex align-items-center justify-content-center">
             <span class="fs-6 me-2 fw-light">50分鐘</span>
-            <p class="fs-2 mt-4 text-center "> NT$1100</p>
+            <p class="fs-2 my-0 text-center "> NT$1100</p>
 
           </div>
 
@@ -360,7 +363,7 @@
       <div class="deco-line border border-success border-2 mt-4"></div>
     </div>
 
-    <ul class="row justify-content-center list-unstyled">
+    <ul data-aos="fade-in" class="row justify-content-center list-unstyled">
       <li class="col-md-4">
         <div class="card bg-secondary text-white mx-auto p-8">
           <div class="squareRounded squareRounded-topLeft position-absolute"></div>
@@ -578,6 +581,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/js/datepicker.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
 
     <script src="./assets/js/vendors.js"></script>

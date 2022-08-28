@@ -18521,6 +18521,10 @@ fieldset:disabled .btn {
   }
 }
 
+body {
+  min-height: calc(100vh - 72px - 52px);
+}
+
 .index__h1 {
   color: #00cc99;
   font-size: 20px;
@@ -18547,7 +18551,7 @@ fieldset:disabled .btn {
   text-indent: 101%;
   overflow: hidden;
   white-space: nowrap;
-  display: inline-block;
+  display: block;
   background-image: url(../images/logo.svg);
   width: 24px;
   height: 24px;
@@ -18619,16 +18623,18 @@ footer {
   color: transparent;
 }
 
-.banner {
+.banner .container {
   background-image: url(../images/bg_home_mobile.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  height: 336px;
 }
 
 @media (min-width: 767px) {
-  .banner {
+  .banner .container {
     background-image: url(../images/bg_home.jpg);
+    height: 534px;
   }
 }
 
@@ -18787,6 +18793,7 @@ footer {
   max-width: 336px;
   margin-right: auto;
   margin-left: auto;
+  border: 1px solid;
 }
 
 .recommend .teacher:hover {
@@ -19175,12 +19182,29 @@ footer {
   content: '1';
 }
 
+.timeline-pointer.step-1.active::before {
+  content: 'check';
+  font-family: 'Material Icons';
+  z-index: 99;
+}
+
 .timeline-pointer.step-2::before {
   content: '2';
 }
 
+.timeline-pointer.step-2.active::before {
+  content: 'check';
+  font-family: 'Material Icons';
+  z-index: 99;
+}
+
 .timeline-pointer.step-3::before {
   content: '3';
+}
+
+.timeline-pointer.step-3.active::before {
+  content: 'check';
+  font-family: 'Material Icons';
 }
 
 .timeline-pointer.active {
@@ -19298,6 +19322,11 @@ footer {
     width: -moz-fit-content;
     width: fit-content;
   }
+}
+
+.classDetail .hover-style:hover {
+  color: #62DB54 !important;
+  cursor: pointer;
 }
 
 .classDetail ul {

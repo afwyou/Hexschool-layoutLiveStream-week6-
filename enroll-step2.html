@@ -19,6 +19,8 @@
     href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/css/datepicker-bs5.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 
     <link rel="stylesheet" href="./assets/style/all.css">
   </head>
@@ -29,9 +31,9 @@
       <a href="./index.html" class="logo_link">程式家教</a>
      </h1>
      <ul class="menu list-unstyled d-md-flex m-0 fs-nav flex-wrap flex-md-nowrap bg-primary">
-       <li class="me-md-12"><a href="./index.html">首頁</a></li>
-       <li class="me-md-12"><a href="./classes.html">課程介紹</a></li>
-       <li class=""><a href="#" data-bs-toggle="modal" data-bs-target="#login"><span class="material-symbols-outlined align-middle me-2">
+       <li class="me-md-12"><a href="./index.html" class="d-block">首頁</a></li>
+       <li class="me-md-12"><a href="./classes.html" class="d-block">課程介紹</a></li>
+       <li class=""><a href="#" data-bs-toggle="modal" data-bs-target="#login" class="d-block"><span class="material-symbols-outlined align-middle me-2">
         account_circle
         </span>登入</a></li>
      </ul>
@@ -50,13 +52,16 @@
 <!-- 進度條 -->
 <div class="bg-primary pt-4 pb-3">
   <div class="container">
+
     <div class="row justify-content-center step2">
       <div class="col-9 col-md-7 timeline ">
       </div>
     </div>
+
     <div class="row">
       <div class="col-3 col-md-5">
         <div class="timeline-pointer text-center step-1 active">
+          <span class="material-icons fs-6">check</span>
           <p>課程報名</p>
         </div>
       </div>
@@ -87,12 +92,12 @@
           <form>
             <div class="mb-4 mb-lg-6">
               <label for="credit-card-num" class="form-label">信用卡帳號</label>
-              <input type="number" class="form-control" id="credit-card-num" placeholder="Xxxx-xxxx-xxxx-xxxx">
+              <input type="tel" class="form-control" id="credit-card-num" placeholder="Xxxx-xxxx-xxxx-xxxx">
             </div>
 
             <div class="mb-4 mb-lg-6">
               <label for="safe-code" class="form-label">安全碼</label>
-              <input type="unmber" class="form-control" id="safe-code" placeholder="***">
+              <input type="tel" class="form-control" id="safe-code" placeholder="***">
             </div>
 
             <div class="mb-4 mb-lg-6">
@@ -102,8 +107,9 @@
 
             <div class="d-lg-flex justify-content-between align-items-center">
               <p class="fs-5 text-white text-start mb-0">NT$1600</p>
-              <button type="submit" class="btn btn-primary pay-button rounded-4 py-2 px-4 px-lg-12">下一步</button>
-            </div>
+              <a href="./enroll-step3.html" type="submit"
+                class="btn btn-primary pay-button rounded-4 py-2 px-4 px-lg-12">下一步</button>
+              </a>
 
 
 
@@ -123,6 +129,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/js/datepicker.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
 
     <script src="./assets/js/vendors.js"></script>
