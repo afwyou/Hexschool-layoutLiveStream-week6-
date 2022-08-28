@@ -51,8 +51,17 @@
     &.step-2::before {
       content: '2';
     }
+    &.step-2.active::before {
+      content: 'check';
+      font-family: 'Material Icons';
+      z-index: 99;
+    }
     &.step-3::before {
       content: '3';
+    }
+    &.step-3.active::before {
+      content: 'check';
+      font-family: 'Material Icons';
     }
     &.active {
       color: #62DB54;

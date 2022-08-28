@@ -8,13 +8,16 @@ current: enroll
 <!-- 進度條 -->
 <div class="bg-primary pt-4 pb-3">
   <div class="container">
+
     <div class="row justify-content-center step2">
       <div class="col-9 col-md-7 timeline ">
       </div>
     </div>
+
     <div class="row">
       <div class="col-3 col-md-5">
         <div class="timeline-pointer text-center step-1 active">
+          <span class="material-icons fs-6">check</span>
           <p>課程報名</p>
         </div>
       </div>
@@ -45,12 +48,12 @@ current: enroll
           <form>
             <div class="mb-4 mb-lg-6">
               <label for="credit-card-num" class="form-label">信用卡帳號</label>
-              <input type="number" class="form-control" id="credit-card-num" placeholder="Xxxx-xxxx-xxxx-xxxx">
+              <input type="tel" class="form-control" id="credit-card-num" placeholder="Xxxx-xxxx-xxxx-xxxx">
             </div>
 
             <div class="mb-4 mb-lg-6">
               <label for="safe-code" class="form-label">安全碼</label>
-              <input type="unmber" class="form-control" id="safe-code" placeholder="***">
+              <input type="tel" class="form-control" id="safe-code" placeholder="***">
             </div>
 
             <div class="mb-4 mb-lg-6">
@@ -60,8 +63,9 @@ current: enroll
 
             <div class="d-lg-flex justify-content-between align-items-center">
               <p class="fs-5 text-white text-start mb-0">NT$1600</p>
-              <button type="submit" class="btn btn-primary pay-button rounded-4 py-2 px-4 px-lg-12">下一步</button>
-            </div>
+              <a href="./enroll-step3.html" type="submit"
+                class="btn btn-primary pay-button rounded-4 py-2 px-4 px-lg-12">下一步</button>
+              </a>
 
 
 
